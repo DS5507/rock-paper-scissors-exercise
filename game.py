@@ -6,6 +6,7 @@ print("Welcome to my Rock-Paper-Scissors Game")
 
 Choice = input("Please choose either 'Rock', 'Paper', or 'Scissors':")
 
+
 list = ["Rock", "Paper", "Scissors"]
 while Choice not in list:
     Choice = input("Please try again. Choose either 'Rock', 'Paper', or 'Scissors':")
