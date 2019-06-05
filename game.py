@@ -1,46 +1,55 @@
 # game.py
 
+import random # load the module to avoid `NameError: name 'random' is not defined`
+
 print("Welcome to my Rock-Paper-Scissors Game")
+print("----------------------------------------------")
+# Capture Inputs
 
 Choice = input("Please choose either 'Rock', 'Paper', or 'Scissors':")
 
+# Validate Input
 
 list = ["Rock", "Paper", "Scissors"]
 while Choice not in list:
-    Choice = input("Please try again. Choose either 'Rock', 'Paper', or 'Scissors':")
+    Choice = input("Invalid selection, please try again. Choose either 'Rock', 'Paper', or 'Scissors':")
 else:
     print('You chose', Choice)    
 
-
-import random # load the module to avoid `NameError: name 'random' is not defined`
+# Generate Computer Selection
 
 Computer = random.choice(list)
 print('The Computer Chose',Computer)
+
+# Determine the Winner
+
+
+
+# Display Final Outcome
+
+
 
 Tie = "You and the Computer tied."
 Win = "You win!"
 Lose = "The Computer wins.  Better luck next time."
 
-if Choice is "Rock" and Computer is "Rock":
+if Choice == Computer:
     print(Tie)
-elif Choice is "Rock" and Computer is "Paper":
+elif Choice == "Rock" and Computer == "Paper":
     print(Lose)
-elif Choice is "Rock" and Computer is "Scissors":
+elif Choice == "Rock" and Computer == "Scissors":
     print(Win)
-elif Choice is "Paper" and Computer is "Rock":
+elif Choice == "Paper" and Computer == "Rock":
     print(Win)
-elif Choice is "Paper" and Computer is "Paper":
-    print(Tie)
-elif Choice is "Paper" and Computer is "Scissors":
+elif Choice == "Paper" and Computer == "Scissors":
     print(Lose)
-elif Choice is "Scissors" and Computer is "Rock":
+elif Choice == "Scissors" and Computer == "Rock":
     print(Lose)
-elif Choice is "Scissors" and Computer is "Scissors":
-    print(Tie)
-elif Choice is "Scissors" and Computer is "Paper":
+elif Choice == "Scissors" and Computer == "Paper":
     print(Win)
 else:
     pass
+
 
 print('Thanks for playing.  Please play again!')
 
