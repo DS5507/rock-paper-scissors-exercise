@@ -2,6 +2,8 @@
 
 
 #Setup Instructions
+
+
 Navigate to file location
  ```sh
  cd ~\rock-paper-scissors-exercise
