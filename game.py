@@ -2,8 +2,6 @@
 
 print("Welcome to my Rock-Paper-Scissors Game")
 
-
-
 Choice = input("Please choose either 'Rock', 'Paper', or 'Scissors':")
 
 
@@ -39,8 +37,10 @@ elif Choice is "Scissors" and Computer is "Rock":
     print(Lose)
 elif Choice is "Scissors" and Computer is "Scissors":
     print(Tie)
-else:
+elif Choice is "Scissors" and Computer is "Paper":
     print(Win)
+else:
+    pass
 
 print('Thanks for playing.  Please play again!')
 

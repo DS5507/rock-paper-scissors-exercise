@@ -1,13 +1,20 @@
 # rock-paper-scissors-exercise
 
 
-# Navigate to file location
- ```cd ~\rock-paper-scissors-exercise```
+#Setup Instructions
+Navigate to file location
+ ```sh
+ cd ~\rock-paper-scissors-exercise
+ ```
 
-# Create Game Environment
- ```conda create -n game-env python=3.7 # (first time only)```
+Create Game Environment
+ ```sh
+ conda create -n game-env python=3.7 # (first time only)
  
-```conda activate game-env```
+conda activate game-env
+```
 
-# Run Python App
-```python game.py```
+Run Python App
+```sh
+python game.py
+```
