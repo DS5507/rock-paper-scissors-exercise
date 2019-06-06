@@ -22,12 +22,7 @@ Computer = random.choice(list)
 print('The Computer Chose',Computer)
 
 # Determine the Winner
-
-
-
 # Display Final Outcome
-
-
 
 Tie = "You and the Computer tied."
 Win = "You win!"
